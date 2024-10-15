@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #e0e0e0;
+  background-color: #121212;
+}
+
+main {
+  padding: 1rem;
+  max-width: 632px; /* 600px + 16px padding on each side */
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+#game-container {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  width: 632px; /* 600px + 16px padding on each side */
+  margin: 0 auto;
+}
+
+#image-container {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  margin: 0 auto 1rem;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+#room-image {
+  width: 600px;
+  height: 200px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-size: 24px;
+}
+
+#character-sprite, #character-sprite-2 {
+  position: absolute;
+  bottom: 12px;
+  left: 25px;
+  width: 130px;
+  height: 175px;
+  background-color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  font-size: 16px;
+}
+
+#character-sprite-2 {
+  display: none;
+}
+
+#action-images-container {
+  position: absolute;
+  bottom: 12px;
+  left: 165px; /* 25px + 130px + 10px */
+  width: 410px; /* 600px - 25px - 130px - 10px - 25px */
+  height: 175px;
+  display: none;
+}
+
+.action-image {
+  position: absolute;
+  width: 130px;
+  height: 175px;
+  background-color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  font-size: 16px;
+}
+
+.action-image:nth-child(1) { left: 0; }
+.action-image:nth-child(2) { left: 140px; }
+.action-image:nth-child(3) { left: 280px; }
+
+#room-description {
+  margin-bottom: 1rem;
+}
+
+#choices {
+  list-style-type: none;
+  padding: 0;
+}
+
+#choices li {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #3700B3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5600E8;
+}
